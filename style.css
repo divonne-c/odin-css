@@ -1,0 +1,411 @@
+/* --------General--------- */
+
+:root {
+    --primary-color: #f9faf8;
+    --secondary-color: #1f2937;
+    --third-color: #e5e7eb;
+    --fourth-color:rgb(0, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* --------Header--------- */
+header {
+    height: 70vh;
+    background: url(./images/banner2.jpeg) no-repeat center center/cover;
+}
+
+.header-overlay {
+    background-color: rgba(255, 255, 255, 0.486);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    /* -----------------Nav */
+    header a {
+        padding: 0 1em;
+        color: var(--fourth-color);
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+        background: rgba(255, 255, 255, 0.76);
+        padding: 1em 2em;
+    }
+
+    .logo-icon {
+        display: flex;
+    }
+
+    .logo-icon i {
+        font-size: 2em;
+    }
+
+    .logo p {
+        font-size: 0.6em;
+        text-align: right;
+    }
+
+
+
+    /* --------------banner */
+   
+    .banner {
+        display: grid;
+        justify-content: center;
+        width: 30vw;
+        margin: auto;
+    }
+
+    .banner h1 {
+        font-size: 3em;
+        margin-bottom: 0.5em;
+    }
+
+
+    .banner button {
+        padding: 10px 30px;
+        border-radius: 12px;
+        border: none;
+        background: var(--fourth-color);
+        color: var(--primary-color);
+        margin-top: 1.5em;
+        width: 10vw;
+    }
+    
+    /* --------------Social Media */
+    .social-media {
+        display: flex;
+        justify-content: center;
+        padding: 1em 2em;
+    }
+
+    .social-media a {
+        padding: 1em 2em;
+        color: black;
+    }
+
+    
+
+
+/* --------Sections--------- */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4em;
+}
+
+
+    /* Categories */
+    #categories {
+        margin: 3em;
+    }
+    .categorie-container {
+        display: flex;
+        justify-content: center;
+        gap: 3em;
+        margin-top: 3em;
+    }
+
+    .categorie-container p {
+        background: rgba(254, 255, 254, 0.562);
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+    .categorie {
+        height: 8em;
+        width: 8em;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .categorie-1 {background: url(./images/breakfast.jpeg) no-repeat center center/cover;}
+    .categorie-2 {background: url(./images/lunch.jpeg) no-repeat center center/cover;}
+    .categorie-3 {background: url(./images/dinner.jpeg) no-repeat center center/cover;}
+    .categorie-4 {background: url(./images/dessert.jpeg) no-repeat center center/cover;}
+    .categorie-5 {background: url(./images/pasta-cat.jpeg) no-repeat center center/cover;}
+    .categorie-6 {background: url(./images/salad.jpeg) no-repeat center center/cover;}
+    .categorie-7 {background: url(./images/vegan.jpeg) no-repeat center center/cover;}
+    .categorie-8 {background: url(./images/lowbudget.jpeg) no-repeat center center/cover;}
+
+
+
+    /* Populair recipes */
+    #populair-recipes{
+        margin: 2em;
+        margin: 4em;
+    }
+
+    section h1 {
+        text-align: center;
+    }
+
+    .recipes-container {
+        display: flex;
+        justify-content: center;
+        margin: 3em;
+        gap: 3em;
+    }
+
+    #populair-recipes img {
+        width: 20em;
+        height: 25em;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+
+    .recipe-text {
+        padding: 0 0.5em;
+    }
+
+    .recipe-details {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5em 0;
+    }
+
+    .recipe-time {
+        display: flex;
+        align-items: center;
+    }
+
+    .recipe-time i {
+        padding-right: 0.4em;
+    }
+
+    .recipes-rating {
+        display: flex;
+        align-items: center;
+    }
+
+    .recipes-rating p {
+        padding-left: 0.2em;
+        letter-spacing: 4px;
+    }
+
+    .recipe-description p {
+        width: 20em;
+    }
+
+    .recipe-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.5em;
+    }
+
+    .recipe-buttons i {
+        padding-left: 1em;
+        font-size: 1.4em;
+    }
+
+    .recipe-buttons button {
+        border: none;
+        background: none;
+        font-size: 1.2em;
+    }
+
+
+    /*Section quote */
+    #quote{
+        background: var(--third-color);
+        padding: 5em 10em;
+        margin: 4em 0;
+    }
+
+    #quote h2 {
+        font-size: 3em;
+        text-align: center;
+        color: #81878f;
+        font-style: italic;
+    }
+
+    #quote p {
+        text-align: end;
+        font-weight: bold;
+    }
+    
+
+    /* Section user recipes */
+    .user-section-header {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .user-recipes-container {
+        display:  grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3em;
+        width: 50%;
+        margin: 3em auto;
+    }
+
+    .user-recipe img {
+        width: 20em;
+        height: 20em;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .user-recipe-header {
+        display: flex;
+        justify-content: space-between;
+        width: 20em;
+    }
+
+    .user-likes {
+        display: flex;
+        align-items: center;
+    }
+
+    .user-likes p {
+        padding-left: 0.5em;
+    }
+
+    .user-recipe-info p {
+        width: 20em;
+        font-size: 0.9em;
+        margin: 0.5em 0;
+    }
+
+    .user-recipe .user-pic {
+        width: 2em;
+        height: 2em;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .user-info a {
+        display: flex;
+        align-items: center;
+    }
+
+    .user-info p {
+        padding-left: 1em;
+    }
+
+    .user-info i {
+        background: rgb(216, 214, 214);
+        border-radius: 50%;
+        padding: 0.5em 0.6em;
+        color: white;
+    }
+
+
+    /* Section 3 */
+    #newsletter {
+        display: flex;
+        height: 30vh;
+        background: grey;
+        margin: 4em 0;
+        padding-left: 20%;
+    }
+
+    #newsletter h3 {
+        font-size: 2em;
+    }
+
+    .newsletter-input {
+        margin-top: 1em;
+    }
+
+    .newsletter-input input {
+        width: 20vw;
+        padding: 10px 5px;
+    }
+
+
+    /* User actions */
+    .user-action-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .user-action-links a {
+        padding: 3em;
+        margin: 4em 0.5em;
+        text-align: center;
+        /* background: lightgrey; */
+        border: 1px solid lightgray;
+        border-radius: 30px;
+        color: black;
+    }
+
+    .user-action-links i {
+        font-size: 2em;
+        margin-bottom: 1em;
+        background: white;
+        background: rgb(207, 206, 206);
+        padding: 1em;
+        width: 3em;
+        border-radius: 50%;
+    }
+
+
+    /* Contact */
+    .contact {
+        height: 50vh;
+        background: lightgray;
+        margin: 0;
+    }
+
+
+
+/* --------Footer--------- */
+footer {
+    background: var(--secondary-color);
+    text-align: center;
+    padding: 2em;
+    color: var(--primary-color);
+}
+
+
+
+/* utilities */
+.like-btn {
+    border: none;
+    background: none;
+}
+
+.like-btn i {
+    font-size: 1.2em;
+}
+
+.like-btn:hover {
+    cursor: pointer;
+}
+
+.sign-up-btn {
+    border: none;
+    padding: 10px 20px;
+    background: lightgray;
+}

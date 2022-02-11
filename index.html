@@ -1,674 +1,784 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/af72fe41a7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Dancing+Script&family=Quicksand&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/af72fe41a7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-</head>
-<body>
-
-    <!--------Header--------->
+  </head>
+  <body>
+    <!------------------Header-------------------->
     <header>
-        <div class="header-overlay">
-            <!-- nav -->
-            <nav>
-                <div class="logo">
-                    <div class="logo-icon">
-                        <a href="#"><i class="fas fa-carrot"></i></a>
-                        <h1>THK</h1>
-                    </div>
-                    <p>The Healthy Kitchen</p>
-                </div>
-                <div class="nav-links">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Recipes</a>
-                    <a href="#">Discover</a>
-                    <a href="#">Community</a>
-                    <a href="#">Contact</a>
-                </div>
-                <div class="nav-icons">
-                    <a href="#"><i class="fas fa-user"></i></a>
-                    <a href="#"><i class="fas fa-search"></i></a>
-                </div>
-            </nav>
+      <div class="header-overlay">
+        <!----- nav ------->
+        <nav>
+          <div class="logo">
+            <a href="">
+              <div class="logo-icon">
+                <i class="fas fa-carrot"></i>
+                <h1>THK</h1>
+              </div>
+              <p class="p-small">The Healthy Kitchen</p>
+            </a>
+          </div>
+          <div>
+            <a class="current" href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Recipes</a>
+            <a href="#">Discover</a>
+            <a href="#">Community</a>
+            <a href="#">Contact</a>
+          </div>
+          <div>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+          </div>
+        </nav>
 
-            <!-- banner -->
-            
-            <div class="banner">
-                <h1>It's all about a Healthy Kitchen!</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere incidunt quas dolore nobis aspernatur voluptate dolorum quia error nostrum nulla.</p>
-                <button>Sign Up</button>
-            </div>
-            
-
-            <!-- Social media -->
-            <div class="social-media">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
+        <!---- banner ----->
+        <div class="banner">
+          <p class="p-small">for everyone</p>
+          <h1>
+            It's all about a <br />
+            <span class="secondary-color">Healthy</span> Kitchen!
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            incidunt quas dolore nobis aspernatur voluptate dolorum quia error
+            nostrum nulla.
+          </p>
+          <a class="secondary-btn" href="#">Sign Up</a>
         </div>
+
+        <!---- Social media ---->
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
     </header>
 
-   <!--------Sections--------->
+    <!-------------------Sections------------------->
 
-   <section id="categories">
-       <h1>Categories</h1>
-       <div class="categorie-container">
-           <a class="categorie categorie-1" href="#"><p>Breakfast</p></a>
-           <a class="categorie categorie-2" href="#"><p>Lunch</p></a>
-           <a class="categorie categorie-3" href="#"><p>Dinner</p></a>
-           <a class="categorie categorie-4" href="#"><p>Dessert</p></a>
-           <a class="categorie categorie-5" href="#"><p>Pasta</p></a>
-           <a class="categorie categorie-6" href="#"><p>Salad</p></a>
-           <a class="categorie categorie-7" href="#"><p>Vegan</p></a>
-           <a class="categorie categorie-8" href="#"><p>Low budget</p></a>
-       </div>
-   </section>
-
-    <section id="populair-recipes">
-        <h1>Our populair Recipes </h1>
-        <div class="recipes-container">
-
-            <!-- Recipe 1 -->
-            <div class="container">
-                <img src="./images/noodles.jpeg" alt="">
-                <!-- Recipe text -->
-                <div class="recipe-text">
-                    <div class="recipe-details">
-
-                        <!-- Time -->
-                        <div class="recipe-time">
-                            <i class="far fa-clock"></i>
-                            <p>30 mins</p>
-                        </div>
-                        
-                        <!-- Rating -->
-                        <div class="recipes-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <i class="far fa-star"></i>
-                            <p>(5)</p>
-                        </div>
-                    </div>
-
-                    <!-- Text -->
-                    <div class="recipe-description">
-                        <h2>Vegan Noodles</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, aliquam..</p>
-
-                        <!-- Buttons -->
-                        <div class="recipe-buttons">
-                            <button>Read More</button>
-                            <div>
-                                <i class="far fa-heart"></i>
-                                <i class="fas fa-share"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Recipe 2 -->
-            <div class="container">
-                <img src="./images/ques.jpeg" alt="">
-                <!-- Recipe text -->
-                <div class="recipe-text">
-                    <div class="recipe-details">
-
-                        <!-- Time -->
-                        <div class="recipe-time">
-                            <i class="far fa-clock"></i>
-                            <p>30 mins</p>
-                        </div>
-                        
-                        <!-- Rating -->
-                        <div class="recipes-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <i class="far fa-star"></i>
-                            <p>(5)</p>
-                        </div>
-                    </div>
-
-                    <!-- Text -->
-                    <div class="recipe-description">
-                        <h2>Quessadilla</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, aliquam..</p>
-
-                        <!-- Buttons -->
-                        <div class="recipe-buttons">
-                            <button>Read More</button>
-                            <div>
-                                <i class="far fa-heart"></i>
-                                <i class="fas fa-share"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Recipe 3 -->
-            <div class="container">
-                <img src="./images/pasta.jpeg" alt="">
-                <!-- Recipe text -->
-                <div class="recipe-text">
-                    <div class="recipe-details">
-
-                        <!-- Time -->
-                        <div class="recipe-time">
-                            <i class="far fa-clock"></i>
-                            <p>30 mins</p>
-                        </div>
-                        
-                        <!-- Rating -->
-                        <div class="recipes-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <i class="far fa-star"></i>
-                            <p>(5)</p>
-                        </div>
-                    </div>
-
-                    <!-- Text -->
-                    <div class="recipe-description">
-                        <h2>Pasta</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, aliquam..</p>
-
-                        <!-- Buttons -->
-                        <div class="recipe-buttons">
-                            <button>Read More</button>
-                            <div>
-                                <i class="far fa-heart"></i>
-                                <i class="fas fa-share"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Recipe 4 -->
-            <div class="container">
-                <img src="./images/humusbowl.jpeg" alt="">
-                <!-- Recipe text -->
-                <div class="recipe-text">
-                    <div class="recipe-details">
-
-                        <!-- Time -->
-                        <div class="recipe-time">
-                            <i class="far fa-clock"></i>
-                            <p>30 mins</p>
-                        </div>
-                        
-                        <!-- Rating -->
-                        <div class="recipes-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <i class="far fa-star"></i>
-                            <p>(5)</p>
-                        </div>
-                    </div>
-
-                    <!-- Text -->
-                    <div class="recipe-description">
-                        <h2>Humus Bowl</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, aliquam..</p>
-
-                        <!-- Buttons -->
-                        <div class="recipe-buttons">
-                            <button>Read More</button>
-                            <div>
-                                <i class="far fa-heart"></i>
-                                <i class="fas fa-share"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-           
-            
-            
-        </div>
+    <!----Section: Categories---->
+    <section>
+      <h1>Categories</h1>
+      <div class="categorie-container">
+        <a class="categorie categorie-1" href="#"><p>Breakfast</p></a>
+        <a class="categorie categorie-2" href="#"><p>Lunch</p></a>
+        <a class="categorie categorie-3" href="#"><p>Dinner</p></a>
+        <a class="categorie categorie-4" href="#"><p>Dessert</p></a>
+        <a class="categorie categorie-5" href="#"><p>Pasta</p></a>
+        <a class="categorie categorie-6" href="#"><p>Salad</p></a>
+        <a class="categorie categorie-7" href="#"><p>Vegan</p></a>
+        <a class="categorie categorie-8" href="#"><p>Low budget</p></a>
+      </div>
     </section>
 
+    <!---- Section: populair recipes ----->
+    <section>
+      <h1>Our populair recipes</h1>
+      <div class="recipes-container">
+        <!---------------------------- Recipe 1-->
+        <div>
+          <a href="#"><img src="./images/noodles.jpeg" alt="noodles" /></a>
+          <!-- Recipe text -->
+          <div class="recipe-details">
+            <!-- Time -->
+            <div class="recipe-time">
+              <i class="far fa-clock"></i>
+              <p>15 mins</p>
+            </div>
 
-    <section id="quote">
-        <h2>“Health is a relationship between you and your body.”</h2>
-        <p> - Terri Guillemets</p>
-    </section>
-    
+            <!-- Rating -->
+            <div class="recipes-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <p>(55)</p>
+            </div>
+          </div>
 
-    <!-- Notes: maximum aantal letters als mensen een titel en beschrijving willen maken -->
+          <!-- Text -->
+          <h2>Vegan noodles</h2>
+          <p class="description-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga,
+            aliquam..
+          </p>
 
-    <!-- User recipes -->
-    <section id="user-recipes">
-        <div class="user-section-header">
-            <h1>See what others make</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati ad adipisci harum eligendi, ullam iste molestias modi aspernatur aut voluptates.</p>
-            <a href="#">discover more</a>
+          <!-- Buttons -->
+          <div class="recipe-buttons">
+            <a class="read-more-btn" href="#">Read More</a>
+            <div class="recipe-buttons-right">
+              <button class="share-btn">
+                <i class="fas fa-share"></i>
+              </button>
+              <div class="like-btn-container">
+                <button class="like-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+                <p>423</p>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        <div class="user-recipes-container">
 
-            <!-- user recipe 1 -->
-            <div class="user-recipe">
-                <a href="#"> <img src="./images/dessert.jpeg" alt=""></a>
-                <!-- header -->
-                <div class="user-recipe-header">
-                    <h2>Chocolate Cake</h2>
-                    <div class="user-likes">
-                        <button class="like-btn" type="button"><i class="far fa-heart"></i></button>
-                        <p>30</p>
-                    </div>
-                </div>
-
-                <!-- Description -->
-                <div class="user-recipe-info">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, dicta.</p>
-                </div>
-
-                <!-- Username -->
-                <div class="user-info">
-                    <a href="#">
-                        <img class="user-pic" src="./images/user1.jpeg" alt="">
-                        <p>thetastyqueen</p>
-                    </a>
-
-                    <div class="user-icons">
-
-                    </div>
-                </div>
+        <!---------------------------- Recipe 2-->
+        <div>
+          <a href="#"><img src="./images/ques.jpeg" alt="Quessadilla" /></a>
+          <!-- Recipe text -->
+          <div class="recipe-details">
+            <!-- Time -->
+            <div class="recipe-time">
+              <i class="far fa-clock"></i>
+              <p>25 mins</p>
             </div>
 
-
-            <!-- user recipe 2 -->
-            <div class="user-recipe">
-                <a href="#"> <img src="./images/user2-food.jpeg" alt=""></a>
-                <!-- header -->
-                <div class="user-recipe-header">
-                    <h2>Delicious breakfast</h2>
-                    <div class="user-likes">
-                        <button class="like-btn" type="button"><i class="far fa-heart"></i></button>
-                        <p>4</p>
-                    </div>
-                </div>
-
-                <!-- Description -->
-                <div class="user-recipe-info">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, dicta.</p>
-                </div>
-
-                <!-- Username -->
-                <div class="user-info">
-                    <a href="#">
-                        <img class="user-pic" src="./images/user2.jpeg" alt="">
-                        <p>food_addict22</p>
-                    </a>
-                </div>
+            <!-- Rating -->
+            <div class="recipes-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <p>(35)</p>
             </div>
+          </div>
 
+          <!-- Text -->
+          <h2>Quessadilla</h2>
+          <p class="description-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga,
+            aliquam..
+          </p>
 
-            <!-- user recipe 3 -->
-            <div class="user-recipe">
-                <a href="#"> <img src="./images/user3-food.jpeg" alt=""></a>
-                <!-- header -->
-                <div class="user-recipe-header">
-                    <h2>Vegan pasta</h2>
-                    <div class="user-likes">
-                        <button class="like-btn" type="button"><i class="far fa-heart"></i></button>
-                        <p>30</p>
-                    </div>
-                </div>
-
-                <!-- Description -->
-                <div class="user-recipe-info">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, dicta.</p>
-                </div>
-
-                <!-- Username -->
-                <div class="user-info">
-                    <a href="#">
-                        <i class="fa fa-regular fa-user"></i>
-                        <p>vegan_princess</p>
-                    </a>
-                </div>
+          <!-- Buttons -->
+          <div class="recipe-buttons">
+            <a class="read-more-btn" href="#">Read More</a>
+            <div class="recipe-buttons-right">
+              <button class="share-btn">
+                <i class="fas fa-share"></i>
+              </button>
+              <div class="like-btn-container">
+                <button class="like-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+                <p>378</p>
+              </div>
             </div>
-
-            <!-- user recipe 4 -->
-            <div class="user-recipe">
-                <a href="#"> <img src="./images/user4-food.jpeg" alt=""></a>
-                <!-- header -->
-                <div class="user-recipe-header">
-                    <h2>Avocado toast</h2>
-                    <div class="user-likes">
-                        <button class="like-btn" type="button"><i class="far fa-heart"></i></button>
-                        <p>124</p>
-                    </div>
-                </div>
-
-                <!-- Description -->
-                <div class="user-recipe-info">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, dicta.</p>
-                </div>
-
-                <!-- Username -->
-                <div class="user-info">
-                    <a href="#">
-                        <img class="user-pic" src="./images/user4.jpeg" alt="">
-                        <p>itsjessiex_</p>
-                    </a>
-                </div>
-            </div>
-
-            <!-- user recipe 5 -->
-            <div class="user-recipe">
-                <a href="#"> <img src="./images/user5-food.jpeg" alt=""></a>
-                <!-- header -->
-                <div class="user-recipe-header">
-                    <h2>Chocolate Cake</h2>
-                    <div class="user-likes">
-                        <button class="like-btn" type="button"><i class="far fa-heart"></i></button>
-                        <p>30</p>
-                    </div>
-                </div>
-
-                <!-- Description -->
-                <div class="user-recipe-info">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, dicta.</p>
-                </div>
-
-                <!-- Username -->
-                <div class="user-info">
-                    <a href="#">
-                        <i class="fa fa-regular fa-user"></i>
-                        <p>thetastyqueen</p>
-                    </a>
-                </div>
-            </div>
-            <!-- user recipe 6 -->
-            <div class="user-recipe">
-                <a href="#"> <img src="./images/user6-food.jpeg" alt=""></a>
-                <!-- header -->
-                <div class="user-recipe-header">
-                    <h2>Chocolate Cake</h2>
-                    <div class="user-likes">
-                        <button class="like-btn" type="button"><i class="far fa-heart"></i></button>
-                        <p>30</p>
-                    </div>
-                </div>
-
-                <!-- Description -->
-                <div class="user-recipe-info">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, dicta.</p>
-                </div>
-
-                <!-- Username -->
-                <div class="user-info">
-                    <a href="#">
-                        <i class="fa fa-regular fa-user"></i>
-                        <p>thetastyqueen</p>
-                    </a>
-                </div>
-            </div>
-            <!-- user recipe 7 -->
-            <div class="user-recipe">
-                <a href="#"> <img src="./images/user7-food.jpeg" alt=""></a>
-                <!-- header -->
-                <div class="user-recipe-header">
-                    <h2>Creamy chicken breast</h2>
-                    <div class="user-likes">
-                        <button class="like-btn" type="button"><i class="far fa-heart"></i></button>
-                        <p>30</p>
-                    </div>
-                </div>
-
-                <!-- Description -->
-                <div class="user-recipe-info">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, dicta.</p>
-                </div>
-
-                <!-- Username -->
-                <div class="user-info">
-                    <a href="#">
-                        <i class="fa fa-regular fa-user"></i>
-                        <p>thetastyqueen</p>
-                    </a>
-                </div>
-            </div>
-
-
-            <!-- user recipe 8 -->
-            <div class="user-recipe">
-                <a href="#"> <img src="./images/user8-food.jpeg" alt=""></a>
-                <!-- header -->
-                <div class="user-recipe-header">
-                    <h2>Salmon curry</h2>
-                    <div class="user-likes">
-                        <button class="like-btn" type="button"><i class="far fa-heart"></i></button>
-                        <p>30</p>
-                    </div>
-                </div>
-
-                <!-- Description -->
-                <div class="user-recipe-info">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, dicta.</p>
-                </div>
-
-                <!-- Username -->
-                <div class="user-info">
-                    <a href="#">
-                        <i class="fa fa-regular fa-user"></i>
-                        <p>thetastyqueen</p>
-                    </a>
-                </div>
-            </div>
-
-
-            <!-- user recipe 9 -->
-            <div class="user-recipe">
-                <a href="#"> <img src="./images/user9-food.jpeg" alt=""></a>
-                <!-- header -->
-                <div class="user-recipe-header">
-                    <h2>Buddha bowl</h2>
-                    <div class="user-likes">
-                        <button class="like-btn" type="button"><i class="far fa-heart"></i></button>
-                        <p>30</p>
-                    </div>
-                </div>
-
-                <!-- Description -->
-                <div class="user-recipe-info">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, dicta.</p>
-                </div>
-
-                <!-- Username -->
-                <div class="user-info">
-                    <a href="#">
-                        <i class="fa fa-regular fa-user"></i>
-                        <p>thetastyqueen</p>
-                    </a>
-                </div>
-            </div>
-
-
-            <!-- user recipe 10 -->
-            <div class="user-recipe">
-                <a href="#"> <img src="./images/user10-food.jpeg" alt=""></a>
-                <!-- header -->
-                <div class="user-recipe-header">
-                    <h2>Bahn mi burger</h2>
-                    <div class="user-likes">
-                        <button class="like-btn" type="button"><i class="far fa-heart"></i></button>
-                        <p>30</p>
-                    </div>
-                </div>
-
-                <!-- Description -->
-                <div class="user-recipe-info">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, dicta.</p>
-                </div>
-
-                <!-- Username -->
-                <div class="user-info">
-                    <a href="#">
-                        <i class="fa fa-regular fa-user"></i>
-                        <p>thetastyqueen</p>
-                    </a>
-                </div>
-            </div>
-
-            <!-- user recipe 11 -->
-            <div class="user-recipe">
-                <a href="#"> <img src="./images/user11-food.jpeg" alt=""></a>
-                <!-- header -->
-                <div class="user-recipe-header">
-                    <h2>Spicy miso chicken ramen</h2>
-                    <div class="user-likes">
-                        <button class="like-btn" type="button"><i class="far fa-heart"></i></button>
-                        <p>30</p>
-                    </div>
-                </div>
-
-                <!-- Description -->
-                <div class="user-recipe-info">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, dicta.</p>
-                </div>
-
-                <!-- Username -->
-                <div class="user-info">
-                    <a href="#">
-                        <i class="fa fa-regular fa-user"></i>
-                        <p>thetastyqueen</p>
-                    </a>
-                </div>
-            </div>
-
-            <!-- user recipe 12 -->
-            <div class="user-recipe">
-                <a href="#"> <img src="./images//user12-food.jpeg" alt=""></a>
-                <!-- header -->
-                <div class="user-recipe-header">
-                    <h2>bavette steak</h2>
-                    <div class="user-likes">
-                        <button class="like-btn" type="button"><i class="far fa-heart"></i></button>
-                        <p>30</p>
-                    </div>
-                </div>
-
-                <!-- Description -->
-                <div class="user-recipe-info">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, dicta.</p>
-                </div>
-
-                <!-- Username -->
-                <div class="user-info">
-                    <a href="#">
-                        <i class="fa fa-regular fa-user"></i>
-                        <p>thetastyqueen</p>
-                    </a>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <!---------------------------- Recipe 3-->
+        <div>
+          <a href="#"><img src="./images/pasta.jpeg" alt="pest pasta" /></a>
+          <!-- Recipe text -->
+          <div class="recipe-details">
+            <!-- Time -->
+            <div class="recipe-time">
+              <i class="far fa-clock"></i>
+              <p>15 mins</p>
+            </div>
+
+            <!-- Rating -->
+            <div class="recipes-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <p>(87)</p>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <h2>Pesto pasta</h2>
+          <p class="description-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga,
+            aliquam..
+          </p>
+
+          <!-- Buttons -->
+          <div class="recipe-buttons">
+            <a class="read-more-btn" href="#">Read More</a>
+            <div class="recipe-buttons-right">
+              <button class="share-btn">
+                <i class="fas fa-share"></i>
+              </button>
+              <div class="like-btn-container">
+                <button class="like-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+                <p>514</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!---------------------------- Recipe 4-->
+        <div>
+          <a href="#"><img src="./images/humusbowl.jpeg" alt="humus bowl" /></a>
+          <!-- Recipe text -->
+          <div class="recipe-details">
+            <!-- Time -->
+            <div class="recipe-time">
+              <i class="far fa-clock"></i>
+              <p>15 mins</p>
+            </div>
+
+            <!-- Rating -->
+            <div class="recipes-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="fa-regular fa-star"></i>
+              <p>(67)</p>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <h2>humus bowl</h2>
+          <p class="description-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga,
+            aliquam..
+          </p>
+
+          <!-- Buttons -->
+          <div class="recipe-buttons">
+            <a class="read-more-btn" href="#">Read More</a>
+            <div class="recipe-buttons-right">
+              <button class="share-btn">
+                <i class="fas fa-share"></i>
+              </button>
+              <div class="like-btn-container">
+                <button class="like-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+                <p>465</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!----------Section: quote --------->
+    <section class="quote">
+      <h2>“Health is a relationship between you and your body.”</h2>
+      <p>- Terri Guillemets</p>
+    </section>
 
-    <!-- Newsletter -->
-    <section id="newsletter">
+    <!----------Section: user recipes --------->
+    <section>
+      <div class="user-section-header">
+        <h1>See what others make</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati ad
+          adipisci harum eligendi, ullam iste molestias modi aspernatur aut
+          voluptates.
+        </p>
+        <a class="secondary-btn" href="#">discover more</a>
+      </div>
+
+      <div class="user-recipes-container">
+        <!---------------- user recipe 1 -->
+        <div>
+          <a href="#">
+            <img src="./images/dessert.jpeg" alt="chocolate cake"
+          /></a>
+          <!-- header -->
+          <div class="user-recipe-header">
+            <h2>Chocolate cake</h2>
+            <div class="user-likes">
+              <button class="like-btn" type="button">
+                <i class="far fa-heart"></i>
+              </button>
+              <p>30</p>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="user-recipe-info">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta,
+              dicta.
+            </p>
+          </div>
+
+          <!-- Username -->
+          <div class="user-info">
+            <a href="#">
+              <img
+                class="user-pic"
+                src="./images/user1.jpeg"
+                alt="profile picture"
+              />
+              <p>thetastyqueen</p>
+            </a>
+
+            <div class="user-icons"></div>
+          </div>
+        </div>
+
+        <!--------------------- user recipe 2 -->
+        <div>
+          <a href="#">
+            <img src="./images/user2-food.jpeg" alt="Delicious breakfast"
+          /></a>
+          <!-- header -->
+          <div class="user-recipe-header">
+            <h2>Delicious breakfast</h2>
+            <div class="user-likes">
+              <button class="like-btn" type="button">
+                <i class="far fa-heart"></i>
+              </button>
+              <p>4</p>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="user-recipe-info">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta,
+              dicta.
+            </p>
+          </div>
+
+          <!-- Username -->
+          <div class="user-info">
+            <a href="#">
+              <img class="user-pic" src="./images/user2.jpeg" alt="" />
+              <p>food_addict22</p>
+            </a>
+          </div>
+        </div>
+
+        <!------------------------- user recipe 3 -->
+        <div>
+          <a href="#"> <img src="./images/user3-food.jpeg" alt="vegan pasta" /></a>
+          <!-- header -->
+          <div class="user-recipe-header">
+            <h2>Vegan pasta</h2>
+            <div class="user-likes">
+              <button class="like-btn" type="button">
+                <i class="far fa-heart"></i>
+              </button>
+              <p>77</p>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="user-recipe-info">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta,
+              dicta.
+            </p>
+          </div>
+
+          <!-- Username -->
+          <div class="user-info">
+            <a href="#">
+              <i class="fa fa-regular fa-user"></i>
+              <p>vegan_princess</p>
+            </a>
+          </div>
+        </div>
+
+        <!-------------------------- user recipe 4 -->
+        <div>
+          <a href="#"> <img src="./images/user4-food.jpeg" alt="Avocado toast" /></a>
+          <!-- header -->
+          <div class="user-recipe-header">
+            <h2>Avocado toast</h2>
+            <div class="user-likes">
+              <button class="like-btn" type="button">
+                <i class="far fa-heart"></i>
+              </button>
+              <p>124</p>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="user-recipe-info">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta,
+              dicta.
+            </p>
+          </div>
+
+          <!-- Username -->
+          <div class="user-info">
+            <a href="#">
+              <img class="user-pic" src="./images/user4.jpeg" alt="" />
+              <p>itsjessiex_</p>
+            </a>
+          </div>
+        </div>
+
+        <!------------------------- user recipe 5 -->
+        <div>
+          <a href="#"> <img src="./images/user5-food.jpeg" alt="pizza" /></a>
+          <!-- header -->
+          <div class="user-recipe-header">
+            <h2>cauliflower pizza</h2>
+            <div class="user-likes">
+              <button class="like-btn" type="button">
+                <i class="far fa-heart"></i>
+              </button>
+              <p>8</p>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="user-recipe-info">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta,
+              dicta.
+            </p>
+          </div>
+
+          <!-- Username -->
+          <div class="user-info">
+            <a href="#">
+              <i class="fa fa-regular fa-user"></i>
+              <p>amyx1978</p>
+            </a>
+          </div>
+        </div>
+        <!--------------------- user recipe 6 -->
+        <div>
+          <a href="#"> <img src="./images/user6-food.jpeg" alt="healthy sandwich" /></a>
+          <!-- header -->
+          <div class="user-recipe-header">
+            <h2>Healthy sandwich</h2>
+            <div class="user-likes">
+              <button class="like-btn" type="button">
+                <i class="far fa-heart"></i>
+              </button>
+              <p>16</p>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="user-recipe-info">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta,
+              dicta.
+            </p>
+          </div>
+
+          <!-- Username -->
+          <div class="user-info">
+            <a href="#">
+              <i class="fa fa-regular fa-user"></i>
+              <p>jxson_frost</p>
+            </a>
+          </div>
+        </div>
+        <!-------------------------- user recipe 7 -->
+        <div>
+          <a href="#"> <img src="./images/user7-food.jpeg" alt="creamy chicken pasta" /></a>
+          <!-- header -->
+          <div class="user-recipe-header">
+            <h2>Creamy chicken pasta</h2>
+            <div class="user-likes">
+              <button class="like-btn" type="button">
+                <i class="far fa-heart"></i>
+              </button>
+              <p>106</p>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="user-recipe-info">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta,
+              dicta.
+            </p>
+          </div>
+
+          <!-- Username -->
+          <div class="user-info">
+            <a href="#">
+              <img class="user-pic" src="./images/user1.jpeg" alt="">
+              <p>thetastyqueen</p>
+            </a>
+          </div>
+        </div>
+
+        <!------------------------- user recipe 8 -->
+        <div>
+          <a href="#"> <img src="./images/user8-food.jpeg" alt="salmon curry" /></a>
+          <!-- header -->
+          <div class="user-recipe-header">
+            <h2>Salmon curry</h2>
+            <div class="user-likes">
+              <button class="like-btn" type="button">
+                <i class="far fa-heart"></i>
+              </button>
+              <p>234</p>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="user-recipe-info">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta,
+              dicta.
+            </p>
+          </div>
+
+          <!-- Username -->
+          <div class="user-info">
+            <a href="#">
+              <i class="fa fa-regular fa-user"></i>
+              <p>mr_eat_right</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- ------------------user recipe 9 -->
+        <div>
+          <a href="#"> <img src="./images/user9-food.jpeg" alt="buddha bowl" /></a>
+          <!-- header -->
+          <div class="user-recipe-header">
+            <h2>Buddha bowl</h2>
+            <div class="user-likes">
+              <button class="like-btn" type="button">
+                <i class="far fa-heart"></i>
+              </button>
+              <p>23</p>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="user-recipe-info">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta,
+              dicta.
+            </p>
+          </div>
+
+          <!-- Username -->
+          <div class="user-info">
+            <a href="#">
+              <img class="user-pic" src="./images/user9.jpeg" alt="">
+              <p>elainex0920</p>
+            </a>
+          </div>
+        </div>
+
+        <!-------------------------- user recipe 10 -->
+        <div>
+          <a href="#"> <img src="./images/user10-food.jpeg" alt="bahn mi burger" /></a>
+          <!-- header -->
+          <div class="user-recipe-header">
+            <h2>Bahn mi burger</h2>
+            <div class="user-likes">
+              <button class="like-btn" type="button">
+                <i class="far fa-heart"></i>
+              </button>
+              <p>78</p>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="user-recipe-info">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta,
+              dicta.
+            </p>
+          </div>
+
+          <!-- Username -->
+          <div class="user-info">
+            <a href="#">
+              <img class="user-pic" src="./images/user10-food.jpeg" alt="">
+              <p>yummifood</p>
+            </a>
+          </div>
+        </div>
+
+        <!---------------- user recipe 11 -->
+        <div>
+          <a href="#"> <img src="./images/user11-food.jpeg" alt="spicy chicken ramen"/></a>
+          <!-- header -->
+          <div class="user-recipe-header">
+            <h2>Spicy chicken ramen</h2>
+            <div class="user-likes">
+              <button class="like-btn" type="button">
+                <i class="far fa-heart"></i>
+              </button>
+              <p>165</p>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="user-recipe-info">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta,
+              dicta.
+            </p>
+          </div>
+
+          <!-- Username -->
+          <div class="user-info">
+            <a href="#">
+              <i class="fa fa-regular fa-user"></i>
+              <p>i_live_for_ramen</p>
+            </a>
+          </div>
+        </div>
+
+        <!---------------------- user recipe 12 -->
+        <div>
+          <a href="#"> <img src="./images//user12-food.jpeg" alt="bavette steak" /></a>
+          <!-- header -->
+          <div class="user-recipe-header">
+            <h2>bavette steak</h2>
+            <div class="user-likes">
+              <button class="like-btn" type="button">
+                <i class="far fa-heart"></i>
+              </button>
+              <p>30</p>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="user-recipe-info">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta,
+              dicta.
+            </p>
+          </div>
+
+          <!-- Username -->
+          <div class="user-info">
+            <a href="#">
+              <i class="fa fa-regular fa-user"></i>
+              <p>sir_steaky</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------Section: Newsletter----------- -->
+    <section class="newsletter">
+      <div class="newsletter-overlay">
         <h3>Subscribe to our newsletter</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur saepe ?</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+          saepe 
+        </p>
         <div class="newsletter-input">
-            <input type="email" placeholder="example@email.com">
-            <button class="sign-up-btn" type="submit">Sign Up</button>
+          <input type="email" placeholder="example@email.com" />
+          <button class="secondary-btn" type="submit">Sign Up</button>
         </div>
+      </div>
     </section>
 
-    <!-- User actions -->
-    <section id="user-actions">
-        <h1>Do it yourself</h1>
-        <div class="user-action-links">
-            <a href="#">
-                <i class="fa fa-solid fa-user-plus"></i>
-                <p>Make an account</p>
-            </a>
-            <a href="#">
-                <i class="fa-regular fa-plus"></i>
-                <p>Create a recipe</p>
-            </a>
-            <a href="#">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <p>Discover recipes</p>
-            </a>
-            <a href="#">
-                <i class="fa-regular fa-circle-question"></i>
-                <p>Ask on the forum</p>
-            </a>
-
-        </div>
+    <!-------------Section: User actions ------------->
+    <section>
+      <h1>Do it yourself</h1>
+      <div class="user-action-links">
+        <a href="#">
+          <i class="fa fa-solid fa-user-plus"></i>
+          <p>Make an account</p>
+        </a>
+        <a href="#">
+          <i class="fa-regular fa-plus"></i>
+          <p>Create a recipe</p>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <p>Discover recipes</p>
+        </a>
+        <a href="#">
+          <i class="fa-regular fa-circle-question"></i>
+          <p>Ask on the forum</p>
+        </a>
+      </div>
     </section>
 
+
+    <!----------------Section: Articles ------------->
     <section class="articles">
-
-        <!-- article 1 -->
-        <div class="article">
-            <h1>10 healthy dinner recipes with low calories</h1>
-            <a href="#">View article</a>
+      <!-------- article 1 -->
+      <div class="article article1">
+        <div class="article-overlay">
+          <i class="fa-solid fa-utensils"></i>
+          <h2>10 healthy dinner recipes with low calories</h2>
+          <a class="primary-btn" href="#">View article</a>
         </div>
+      </div>
 
-        <div class="article-container">
-            <!-- article 2 -->
-            <div class="article">
-                <h1>10 healthy dinner recipes with low calories</h1>
-                <a href="#">View article</a>
-            </div>
-            <!-- article 3 -->
-            <div class="article">
-                <h1>10 healthy dinner recipes with low calories</h1>
-                <a href="#">View article</a>    
-            </div>
+      <div class="article-container">
+        <!-------- article 2 -->
+        <div class="article article2">
+          <div class="article-overlay">
+            <i class="fa-solid fa-utensils"></i>
+            <h2>20 ways to make pasta</h2>
+            <a class="primary-btn" href="#">View article</a>
+          </div>
         </div>
+        <!-------- article 3 -->
+        <div class="article article3">
+          <div class="article-overlay">
+            <i class="fa-solid fa-utensils"></i>
+            <h2>the most populair recipes of 2021</h2>
+            <a class="primary-btn" href="#">View article</a>
+          </div>
+        </div>
+      </div>
     </section>
 
 
+    <!----------------Section: Contact ------------->
     <section class="contact">
-        <h1>Contact</h1>
+      <h1>Contact</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas distinctio excepturi voluptatum sunt eveniet hic labore aperiam nulla qui vitae!</p>
+      <p>Follow us</p>
+      <div class="contact-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
 
-       <p>Follow us</p>
-        <div class="contact-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-pinterest-p"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
-
-        <form action="">
-            <input type="text" id="name" placeholder="Name">
-            <input type="email" id="email" placeholder="Email">
-            <input type="text" id="onderwerp" placeholder="Subject">
-            <textarea id="bericht" name="bericht" rows="4" cols="30" placeholder="Message"></textarea>
-            <input class="btn-green" type="submit" id="submit" value="Verzenden">
-        </form>
+      <form action="">
+        <input type="text" id="name" placeholder="Name" required/>
+        <input type="email" id="email" placeholder="Email" required/>
+        <input type="text" id="onderwerp" placeholder="Subject" required/>
+        <textarea
+          id="bericht"
+          name="bericht"
+          rows="4"
+          cols="30"
+          placeholder="Message"
+        ></textarea>
+        <button type="submit" class="secondary-btn">Submit</button>
+      </form>
     </section>
 
     <!--------Footer--------->
     <footer>
-        <p>Copyright The Odin Project 2021</p>
+      <p>Copyright The Odin Project 2021</p>
     </footer>
-    
-</body>
+  </body>
 </html>

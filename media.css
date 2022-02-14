@@ -1,0 +1,452 @@
+
+/* Laptop */
+
+@media only screen and (max-width: 1450px) {
+  /* section: populair recipes */
+  .recipe {
+    width: 17vw;
+    margin: auto;
+  }
+
+  .recipes-container img {
+    width: 15em;
+    height: 20em;
+    margin: auto;
+  }
+  
+  .description-text {
+    width: 90%;
+  }
+
+  /* section: user recipes */
+  .user-recipes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3em;
+  }
+ 
+}
+
+
+/* Ipad pro*/
+
+@media only screen and (max-width: 1100px) {
+  /* ----------------------header */
+  nav {
+    height: 6vh;
+  }
+
+  /* Dropdown */
+  .nav-links,
+  .nav-icons {
+    display: none;
+  }
+
+  .nav-dropdown {
+    display: inherit;
+  }
+
+  /* banner */
+  .banner {
+    width: 50vw;
+  }
+
+  .banner h1 {
+    font-size: 4em;
+  }
+
+  .banner p {
+    width: 90%;
+  }
+
+  .banner a {
+    width: 20vw;
+  }
+
+
+  /* -----------------Sections */
+  section {
+    margin: 4em 2em;
+  }
+
+  /* section: categories */
+  .categorie-container {
+    gap: 1em;
+  }
+
+  .categorie-container p{
+    font-size: 0.8em;
+  }
+
+  .categorie {
+    height: 6em;
+    width: 6em;
+  }
+
+  /* section: populair recipes */
+  .recipes-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+  }
+
+  .recipe {
+    width: 30vw;
+    margin: auto;
+  }
+
+  .recipes-container img {
+    width: 20em;
+    height: 20em;
+    margin: auto;
+  }
+ 
+  /* section: quote */
+  .quote h2 {
+    font-size: 3em;
+  }
+
+  /* section: user recipes */
+  .user-section-header {
+    width: 70%;
+  }
+
+  .user-recipes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3em;
+  }
+
+  .user-recipes-container img {
+    width: 15em;
+    height: 15em;
+  }
+
+  .user-recipe-header {
+    width: 15em;
+    padding: 0.5em 0;
+  }
+
+  .user-recipe-header h2 {
+    font-size: 1em;
+  }
+
+  .user-recipe-info p {
+    display: none;
+  }
+  
+  /* section: newsletter  */
+  .newsletter-overlay {
+    padding-left: 9%;
+  }
+  
+
+  /* section: articles */
+
+  .articles {
+    width: 100%;
+  }
+
+  .article h2 {
+    padding: 1em;
+    font-size: 2em;
+  }
+
+  .article a {
+    text-align: center;
+  }
+
+  /* section: contactx */
+  .contact p {
+    width: 90%;
+  }
+
+  form {
+    width: 70%;
+  }
+
+}
+
+
+
+
+/* Ipad air */
+
+@media only screen and (max-width: 850px) {
+
+    /* -----------------Sections */
+  
+    /* section: categories */
+    .categorie-container p{
+      font-size: 0.7em;
+    }
+  
+    .categorie {
+      height: 5em;
+      width: 5em;
+    }
+
+    /* section: populair recipes */
+  .recipes-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+  }
+
+  .recipe {
+    width: 80%;
+    margin: auto;
+  }
+
+  .recipes-container img {
+    width: 15em;
+    height: 15em;
+    margin: auto;
+  }
+
+  .description-text {
+    width: 98%;
+  }
+ 
+  /* section: quote */
+  .quote {
+    padding: 4em;
+  }
+
+  /* section: user recipes */
+  .user-recipes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+  }
+
+  .user-recipes-container img {
+    width: 12em;
+    height: 12em;
+  }
+
+  .user-recipe-header {
+    width: 12em;
+    height: 5vh;
+  }
+
+  /* section: newsletter */
+  .newsletter-input input {
+    width: 40vw;
+  }
+
+  /* section: user actions */
+  .user-action-links a {
+    padding: 2em 1em;
+  }
+
+  .user-action-links i {
+    font-size: 1em;
+  }
+
+  .user-action-links p {
+    font-size: 0.8em;
+  }
+
+  /* section: articles */
+  .articles {
+    width: 90%;
+  }
+
+  .article {
+    margin: 0.5em;
+  }
+
+  .article h2 {
+    font-size: 1.8em;
+  }
+}
+
+
+
+
+
+/* Iphone 8 plus */
+
+@media only screen and (max-width: 450px) {
+  /* ------------------header */
+
+  /* nav */
+  nav {
+    height: 9vh;
+  }
+
+  .dropdown-menu {
+    top: 9vh;
+  }
+
+  /* banner */
+  .banner {
+    width: 90vw;
+  }
+  .banner h1 {
+    font-size: 2.5em;
+  }
+
+  .banner p {
+    display: none;
+  }
+
+  .banner a {
+    width: 40vw;
+  }
+
+  /* social media */
+  .social-media a {
+    padding: 2em 1em;
+  }
+
+
+  /* -----------------Sections */
+  section {
+    margin: 2em;
+  }
+
+  section h1 {
+    font-size: 1.3em;
+  }
+
+  /* section: categories */
+  .categorie-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2em auto;
+    grid-gap: 1em;
+
+  }
+
+   /* section: populair recipes */
+   .recipes-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+    margin: 2em auto;
+    text-align: center;
+  }
+
+  .recipes-container img {
+    width: 13em;
+    height: 13em;
+  }
+
+  .recipe-details,
+  .recipe-buttons {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin: 0.5em;
+  }
+
+  .description-text {
+    width: 98%;
+    font-size: 0.8em;
+  }
+
+  .recipe-time {
+    justify-content: center;
+  }
+
+  .recipe-buttons a {
+    margin: 0.5em 0;
+  }
+
+
+
+  /* section: quote */
+  .quote {
+    padding: 2em 1em;
+  }
+
+  .quote h2 {
+    font-size: 2em;
+  }
+
+  .quote p {
+    font-size: 0.7em;
+    margin-top: 1em;
+  }
+
+  /* section: user recipes */
+  .user-section-header {
+    width: 90%;
+  }
+
+  .user-recipes-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+  }
+
+  .user-info {
+    margin: 1em;
+  }
+
+  /* section: newsletter */
+  .newsletter {
+    height: 100%;
+  }
+
+  .newsletter h3 {
+    font-size: 2em;
+  }
+
+  .newsletter-overlay {
+    padding:  2em 1em;
+    text-align: center;
+  }
+
+  .newsletter-input {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    padding: 2em 0;
+  }
+
+  .newsletter-input input {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  /* section: user actions */
+  .user-action-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .user-action-links a{
+    margin: 1em;
+  }
+
+  /* section: articles */
+  .articles {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+
+  .article i,
+  .article a {
+    margin: 1em;
+  }
+
+  /* section: contact */
+  .contact {
+    padding: 1em;
+  }
+
+  .contact p,
+  form,
+  form button {
+    width: 100%;
+  }
+
+  .contact i {
+    padding: 0 0.5em 1em 0.5em;
+  }
+  
+}
+

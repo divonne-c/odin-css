@@ -30,7 +30,6 @@ a {
 
 /* --------Header--------- */
 header {
-  height: 70vh;
   background: url(./images/banner2.jpeg) no-repeat center center/cover;
 }
 
@@ -88,6 +87,7 @@ header a:hover {
   justify-content: center;
   width: 30vw;
   margin: auto;
+  padding: 4em 0;
 }
 
 .banner h1 {
@@ -106,7 +106,7 @@ header a:hover {
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
   margin-top: 1.5em;
-  width: 7vw;
+  width: 10vw;
   text-align: center;
 }
 
@@ -515,7 +515,6 @@ section h1::after {
 
 /*----------------------Section: Contact */
 .contact {
-  /* height: 50vh; */
   background: var(--light-color);
   margin: 0;
   padding: 2em;
@@ -634,4 +633,46 @@ footer {
   text-transform: uppercase;
 }
 
+/* Hamburger */
 
+.nav-dropdown i {
+  font-size: 3em;
+  color: var(--primary-color);
+}
+
+.nav-dropdown button {
+  border: none;
+  outline: none;
+  background: transparent;
+  position: relative;
+}
+
+.nav-dropdown button:hover {
+  cursor: pointer;
+}
+
+.dropdown-menu i,
+.dropdown-menu a {
+  font-size: 1em;
+  padding-bottom: 1em;
+}
+
+.dropdown-menu i:last-child {
+  padding: 0;
+}
+
+.dropdown-menu {
+  display: grid;
+  position: absolute;
+  top: 6vh;
+  right: 0;
+  text-align: right;
+  background: var(--nav-bg);
+  width: 100%;
+  padding: 1em;
+  z-index: 0;
+}
+
+.hidden {
+  display: none;
+}

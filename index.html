@@ -4,14 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Dancing+Script&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Dancing+Script&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/af72fe41a7.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./media.css" />
     <title>Document</title>
   </head>
   <body>
@@ -29,7 +33,29 @@
               <p class="p-small">The Healthy Kitchen</p>
             </a>
           </div>
-          <div>
+
+          <!-- Dropdown menu -->
+          <div class="nav-dropdown hidden">
+            <!-- dropwdown button -->
+            <button id="dropdown-btn">
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Dropdown links -->
+            <div class="dropdown-menu hidden">
+              <a class="current" href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Recipes</a>
+              <a href="#">Discover</a>
+              <a href="#">Community</a>
+              <a href="#">Contact</a>
+              <a href="#"><i class="fas fa-user"></i></a>
+              <a href="#"><i class="fas fa-search"></i></a> 
+            </div>
+          </div>
+
+          <!-- Menu -->
+          <div class="nav-links">
             <a class="current" href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Recipes</a>
@@ -37,7 +63,7 @@
             <a href="#">Community</a>
             <a href="#">Contact</a>
           </div>
-          <div>
+          <div class="nav-icons">
             <a href="#"><i class="fas fa-user"></i></a>
             <a href="#"><i class="fas fa-search"></i></a>
           </div>
@@ -91,7 +117,7 @@
       <h1>Our populair recipes</h1>
       <div class="recipes-container">
         <!---------------------------- Recipe 1-->
-        <div>
+        <div class="recipe">
           <a href="#"><img src="./images/noodles.jpeg" alt="noodles" /></a>
           <!-- Recipe text -->
           <div class="recipe-details">
@@ -137,7 +163,7 @@
         </div>
 
         <!---------------------------- Recipe 2-->
-        <div>
+        <div class="recipe">
           <a href="#"><img src="./images/ques.jpeg" alt="Quessadilla" /></a>
           <!-- Recipe text -->
           <div class="recipe-details">
@@ -183,7 +209,7 @@
         </div>
 
         <!---------------------------- Recipe 3-->
-        <div>
+        <div class="recipe">
           <a href="#"><img src="./images/pasta.jpeg" alt="pest pasta" /></a>
           <!-- Recipe text -->
           <div class="recipe-details">
@@ -229,7 +255,7 @@
         </div>
 
         <!---------------------------- Recipe 4-->
-        <div>
+        <div class="recipe">
           <a href="#"><img src="./images/humusbowl.jpeg" alt="humus bowl" /></a>
           <!-- Recipe text -->
           <div class="recipe-details">
@@ -369,7 +395,9 @@
 
         <!------------------------- user recipe 3 -->
         <div>
-          <a href="#"> <img src="./images/user3-food.jpeg" alt="vegan pasta" /></a>
+          <a href="#">
+            <img src="./images/user3-food.jpeg" alt="vegan pasta"
+          /></a>
           <!-- header -->
           <div class="user-recipe-header">
             <h2>Vegan pasta</h2>
@@ -400,7 +428,9 @@
 
         <!-------------------------- user recipe 4 -->
         <div>
-          <a href="#"> <img src="./images/user4-food.jpeg" alt="Avocado toast" /></a>
+          <a href="#">
+            <img src="./images/user4-food.jpeg" alt="Avocado toast"
+          /></a>
           <!-- header -->
           <div class="user-recipe-header">
             <h2>Avocado toast</h2>
@@ -461,7 +491,9 @@
         </div>
         <!--------------------- user recipe 6 -->
         <div>
-          <a href="#"> <img src="./images/user6-food.jpeg" alt="healthy sandwich" /></a>
+          <a href="#">
+            <img src="./images/user6-food.jpeg" alt="healthy sandwich"
+          /></a>
           <!-- header -->
           <div class="user-recipe-header">
             <h2>Healthy sandwich</h2>
@@ -491,7 +523,9 @@
         </div>
         <!-------------------------- user recipe 7 -->
         <div>
-          <a href="#"> <img src="./images/user7-food.jpeg" alt="creamy chicken pasta" /></a>
+          <a href="#">
+            <img src="./images/user7-food.jpeg" alt="creamy chicken pasta"
+          /></a>
           <!-- header -->
           <div class="user-recipe-header">
             <h2>Creamy chicken pasta</h2>
@@ -514,7 +548,7 @@
           <!-- Username -->
           <div class="user-info">
             <a href="#">
-              <img class="user-pic" src="./images/user1.jpeg" alt="">
+              <img class="user-pic" src="./images/user1.jpeg" alt="" />
               <p>thetastyqueen</p>
             </a>
           </div>
@@ -522,7 +556,9 @@
 
         <!------------------------- user recipe 8 -->
         <div>
-          <a href="#"> <img src="./images/user8-food.jpeg" alt="salmon curry" /></a>
+          <a href="#">
+            <img src="./images/user8-food.jpeg" alt="salmon curry"
+          /></a>
           <!-- header -->
           <div class="user-recipe-header">
             <h2>Salmon curry</h2>
@@ -553,7 +589,9 @@
 
         <!-- ------------------user recipe 9 -->
         <div>
-          <a href="#"> <img src="./images/user9-food.jpeg" alt="buddha bowl" /></a>
+          <a href="#">
+            <img src="./images/user9-food.jpeg" alt="buddha bowl"
+          /></a>
           <!-- header -->
           <div class="user-recipe-header">
             <h2>Buddha bowl</h2>
@@ -576,7 +614,7 @@
           <!-- Username -->
           <div class="user-info">
             <a href="#">
-              <img class="user-pic" src="./images/user9.jpeg" alt="">
+              <img class="user-pic" src="./images/user9.jpeg" alt="" />
               <p>elainex0920</p>
             </a>
           </div>
@@ -584,7 +622,9 @@
 
         <!-------------------------- user recipe 10 -->
         <div>
-          <a href="#"> <img src="./images/user10-food.jpeg" alt="bahn mi burger" /></a>
+          <a href="#">
+            <img src="./images/user10-food.jpeg" alt="bahn mi burger"
+          /></a>
           <!-- header -->
           <div class="user-recipe-header">
             <h2>Bahn mi burger</h2>
@@ -607,7 +647,7 @@
           <!-- Username -->
           <div class="user-info">
             <a href="#">
-              <img class="user-pic" src="./images/user10-food.jpeg" alt="">
+              <img class="user-pic" src="./images/user10-food.jpeg" alt="" />
               <p>yummifood</p>
             </a>
           </div>
@@ -615,7 +655,9 @@
 
         <!---------------- user recipe 11 -->
         <div>
-          <a href="#"> <img src="./images/user11-food.jpeg" alt="spicy chicken ramen"/></a>
+          <a href="#">
+            <img src="./images/user11-food.jpeg" alt="spicy chicken ramen"
+          /></a>
           <!-- header -->
           <div class="user-recipe-header">
             <h2>Spicy chicken ramen</h2>
@@ -646,7 +688,9 @@
 
         <!---------------------- user recipe 12 -->
         <div>
-          <a href="#"> <img src="./images//user12-food.jpeg" alt="bavette steak" /></a>
+          <a href="#">
+            <img src="./images//user12-food.jpeg" alt="bavette steak"
+          /></a>
           <!-- header -->
           <div class="user-recipe-header">
             <h2>bavette steak</h2>
@@ -683,7 +727,7 @@
         <h3>Subscribe to our newsletter</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          saepe 
+          saepe
         </p>
         <div class="newsletter-input">
           <input type="email" placeholder="example@email.com" />
@@ -714,7 +758,6 @@
         </a>
       </div>
     </section>
-
 
     <!----------------Section: Articles ------------->
     <section class="articles">
@@ -747,11 +790,14 @@
       </div>
     </section>
 
-
     <!----------------Section: Contact ------------->
     <section class="contact">
       <h1>Contact</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas distinctio excepturi voluptatum sunt eveniet hic labore aperiam nulla qui vitae!</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+        distinctio excepturi voluptatum sunt eveniet hic labore aperiam nulla
+        qui vitae!
+      </p>
       <p>Follow us</p>
       <div class="contact-icons">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -762,9 +808,9 @@
       </div>
 
       <form action="">
-        <input type="text" id="name" placeholder="Name" required/>
-        <input type="email" id="email" placeholder="Email" required/>
-        <input type="text" id="onderwerp" placeholder="Subject" required/>
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="onderwerp" placeholder="Subject" required />
         <textarea
           id="bericht"
           name="bericht"
@@ -780,5 +826,8 @@
     <footer>
       <p>Copyright The Odin Project 2021</p>
     </footer>
+
+    <!-- script -->
+    <script src="./script.js"></script>
   </body>
 </html>
